@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zuri Form</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuri Form</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="text-section">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="form-section">
+        <div class="blue-div">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form class="form" novalidate>
+          <div class="form-group">
+            <input
+              type="text"
+              name="firstname"
+              id="fname"
+              class="form-control"
+              placeholder="First Name"
+              required
+            />
+            <span><em class="error-msg">First name cannot be empty</em></span>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="lastname"
+              id="lname"
+              class="form-control"
+              placeholder="Last Name"
+              required
+            />
+            <span><em class="error-msg">Last name cannot be empty</em></span>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Email Address"
+              required
+            />
+            <span
+              ><em class="error-msg">Looks like this is not an email</em></span
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              placeholder="Password"
+              required
+            />
+            <span><em class="error-msg">Password cannot be empty</em></span>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="form-control btn">
+              Claim your free trial
+            </button>
+          </div>
+          <div class="form-group">
+            <p>
+              By clicking the button above, you agree to our
+              <a href="#">Terms and Services</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
