@@ -36,6 +36,10 @@ form.addEventListener('submit', e => {
       )
     ) {
       input.classList.add('form-input-control');
+    } else if (input.validity.valid) {
+      alert('Form Submitted Successfully');
+      // refresh page
+      window.location.reload();
     }
   });
 });
